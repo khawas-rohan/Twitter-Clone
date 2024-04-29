@@ -781,6 +781,10 @@ video {
   width: 80%;
 }
 
+.w-11 {
+  width: 2.75rem;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1187,6 +1191,10 @@ video {
     margin-left: 0.75rem;
   }
 
+  .md\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1217,6 +1225,10 @@ video {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-24 {
+    width: 6rem;
   }
 
   .md\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
