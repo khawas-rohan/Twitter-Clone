@@ -68,15 +68,20 @@ function handleHoverEffect() {
 
 // Toggle between light and dark modes
 document.querySelector(".light").addEventListener("click", () => {
+    applyDarkMode()
     document.querySelector(".light").style.display = "none";
     document.querySelector(".dark").style.display = "block";
-    applyDarkMode()
+
+    document.querySelector(".logo").style.filter = "invert(1)";
 });
 
 document.querySelector(".dark").addEventListener("click", () => {
   applyLightMode()
   document.querySelector(".light").style.display = "block";
   document.querySelector(".dark").style.display = "none";
+
+  document.querySelector(".logo").style.filter = "invert(0)";
+
 });
 
 
