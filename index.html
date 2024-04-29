@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter-Clone</title>
+    <link rel="shortcut icon" href="https://abs.twimg.com/favicons/twitter-pip.3.ico">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./src/output.css">
+
+</head>
+
+<body class="font-sans">
+    <div class="flex md:container mx-auto mt-1">
+
+        <!-- First Section---------------------------------------------------------- -->
+
+        <div class="first bg-white mr-8 border-r-1 h-[100%] sticky top-0">
+            <!-- Logo--------------------------------------------------------------- -->
+            <div class="ml-2 px-2 py-2 w-fit hover:bg-gray-200 cursor-pointer rounded-full ">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="w-8 
+                            r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                    <g>
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <!-- Icon---------------------------------------------------------------- -->
+            <div class="sidebar flex">
+                <ul class="flex flex-col  text-xl font-semibold w-1/2">
+                    <li
+                        class="flex justify-start w-fit items-center px-4 py-2  hover:bg-gray-200 cursor-pointer rounded-full   ">
+                        <span class="material-symbols-outlined text-3xl">home</span>Home
+                    </li>
+                    <li
+                        class="flex justify-start w-fit items-center px-4 py-2  hover:bg-gray-200 cursor-pointer rounded-full ">
+                        <span class="material-symbols-outlined text-3xl">search</span>Explore
+                    </li>
+                    <li
+                        class="flex justify-start w-fit items-center px-4 py-2  hover:bg-gray-200 cursor-pointer rounded-full ">
+                        <span class="material-symbols-outlined text-3xl">notifications</span>Notifications
+                    </li>
+                    <li
+                        class="flex justify-start w-fit items-center px-4 py-2  hover:bg-gray-200 cursor-pointer rounded-full ">
+                        <span class="material-symbols-outlined text-3xl">message</span>Messages
+                    </li>
+                    <li
+                        class="flex justify-start w-fit items-center px-4 py-2  hover:bg-gray-200 cursor-pointer rounded-full ">
+                        <span class="material-symbols-outlined text-3xl">lists</span>Lists
+                    </li>
+                    <li
+                        class="flex justify-start w-fit items-center px-4 py-2  hover:bg-gray-200 cursor-pointer rounded-full ">
+                        <span class="material-symbols-outlined text-3xl">workspace_premium</span>Premium
+                    </li>
+                    <li
+                        class="flex justify-start w-fit items-center px-4 py-2  hover:bg-gray-200 cursor-pointer rounded-full ">
+                        <span class="material-symbols-outlined text-3xl">person</span>Profile
+                    </li>
+                    <li
+                        class="flex justify-start w-fit items-center px-4 py-2  hover:bg-gray-200 cursor-pointer rounded-full ">
+                        <span class="material-symbols-outlined text-3xl">more</span>More
+                    </li>
+                </ul>
+            </div>
+            <!-- Button----------------------------------------------------------------- -->
+            <div
+                class="btn h-14 w-60 border rounded-full flex justify-center bg-blue-500 text-white font-bold text-xl mt-2 hover:bg-blue-600 cursor-pointer">
+                <button>Post</button>
+            </div>
+            <!-- Khawas_rohan------------------------------------------------------------ -->
+            <div class="flex items-center justify-between  mt-5 rounded-full
+                            hover:bg-gray-100 cursor-pointer   ">
+                <div class="text flex items-center gap-3">
+                    <img class="rounded-full h-14 w-14 object-cover" src="img/rohan.jpg" alt="khawas_rohan">
+                    <div class="img-textALL">
+                        <p class="font-bold text-sm">ROHAN KHAWAS</p>
+                        <p class="text-xs">@khawas_rohan</p>
+                    </div>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined p-1 hover:bg-blue-200 rounded-full">more_horiz</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Section---------------------------------------------------------- -->
+
+        <div class="second  w-full border border-r- border-b-0 border-t-0">
+            <!--For You Following-----------------------------------------------------  -->
+            <div class="flex border-b-[1px] cursor-pointer font-bold min-h-14">
+                <div class="follow hover:bg-gray-200 w-1/2 flex justify-center items-center border-b-4 border-blue-500">
+                    For You</div>
+                <div class="following hover:bg-gray-200 w-1/2 flex justify-center items-center">Following</div>
+                <div class="setting flex items-center">
+                    <span class="material-symbols-outlined cursor-pointer
+                    hover:bg-gray-200 rounded-full px-2 py-1 mx-3 text-lg">settings</span>
+                </div>
+            </div>
+            <!-- Posting Methods--------------------------------------------------------------- -->
+            <div class="p-3 ">
+                <!-- profile and whats happening---------------- -->
+                <div class="flex flex-col mb-2">
+                    <div class="post flex space-x-3">
+                        <img class="rounded-full h-14 w-16 object-cover" src="img/rohan.jpg" alt="khawas_rohan">
+                        <input class="w-full border-none focus:outline-none text-xl" type="text"
+                            placeholder="What is happening?!">
+                    </div>
+                    <!-- Everyone----------------------- -->
+                    <div class="reply flex  text-blue-500 font-bold items-center p-1 cursor-pointer ml-16 text-sm space-x-1
+                    hover:bg-blue-100 rounded-full w-fit">
+                        <span class="material-symbols-outlined text-lg">public</span>
+                        <p>Everyone can reply</p>
+                    </div>
+                </div>
+                <!-- emoji--------------------------------------- -->
+                <div class="flex justify-between items-center p-2 border-b border-t border-gray-100">
+                    <div class="cursor-pointer ml-10">
+                        <span
+                            class="material-symbols-outlined text-blue-600 text-xl hover:bg-blue-100 rounded-full px-1 ">gallery_thumbnail</span>
+                        <span
+                            class="material-symbols-outlined text-blue-600 text-xl hover:bg-blue-100 rounded-full px-1">gif_box</span>
+                        <span
+                            class="material-symbols-outlined text-blue-600 text-xl hover:bg-blue-100 rounded-full px-1">cell_tower</span>
+                        <span
+                            class="material-symbols-outlined text-blue-600 text-xl hover:bg-blue-100 rounded-full px-1">sentiment_satisfied</span>
+                        <span
+                            class="material-symbols-outlined text-blue-600 text-xl hover:bg-blue-100 rounded-full px-1">schedule</span>
+                        <span
+                            class="material-symbols-outlined text-blue-300 text-xl hover:bg-blue-100 rounded-full px-1">location_on</span>
+                    </div>
+                    <div class="btn h-10 w-24 border rounded-full flex justify-center bg-blue-500 text-white font-bold text-lg
+                     hover:bg-blue-600 cursor-pointer">
+                        <button>Post</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Posts------------------------------------------------------------------ -->
+            <div class="border-gray-200 border-b cursor-pointer hover:bg-gray-100">
+                <div class="p-3 pt-0">
+                    <!-- Image and Text------------------------ -->
+                    <div class="text flex items-center gap-3">
+                        <!-- imgage----------------------- -->
+                        <img class="rounded-full h-14 w-14 object-cover" src="img/king.jpg" alt="khawas_rohan">
+                        <!-- Text------------------------- -->
+                        <div class="img-textALL">
+                            <p class="font-bold hover:underline">KING <span class="font-normal text-gray-500">@i_feel_king</span></p>
+                            <p>New Album Dropping Soon...</p>
+                        </div>
+                    </div>
+                    <!-- Picture for Post----------------------------------------------------------------- -->
+                    <div class="flex justify-center p-4">
+                        <img class="rounded-2xl object-cover" src="img/king2.jpg" alt="">
+                    </div>
+                    <!-- Like Share and Comment------------------------------------------------ -->
+                    <div class="flex space-x-2 items-center ml-3">
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">favorite</span>800k
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">thumb_down</span>5k
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">comment</span>7k
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">repeat</span>5k
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">share</span>6k
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">bar_chart</span>2.7k
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-gray-200 border-b cursor-pointer mt-3 hover:bg-gray-100">
+                <div class="p-3 pt-0">
+                    <!-- Image Profile and Text------------------------ -->
+                    <div class="text flex items-center gap-3">
+                        <!-- imgage----------------------- -->
+                        <img class="rounded-full h-14 w-14 object-cover" src="img/nft.jpg" alt="khawas_rohan">
+                        <!-- Text------------------------- -->
+                        <div class="img-textALL">
+                            <p class="font-bold hover:underline">Savage MeMe <span class="font-normal text-gray-500">@i_make_u_laugh</span></p>
+                            <p>Just why internet...</p>
+                        </div>
+                    </div>
+                    <!-- Picture for Post----------------------------------------------------------------- -->
+                    <div class="flex justify-center p-4">
+                        <img class="rounded-2xl object-cover" src="img/meme1.jpg" alt="">
+                    </div>
+                    <!-- Like Share and Comment------------------------------------------------ -->
+                    <div class="flex space-x-2 items-center ml-3">
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">favorite</span>1000k
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">thumb_down</span>50k
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">comment</span>70k
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">repeat</span>50k
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">share</span>60k
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">bar_chart</span>11.1k
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-gray-200 border-b cursor-pointer mt-3 hover:bg-gray-100">
+                <div class="p-3 pt-0">
+                    <!-- Image Profile and Text------------------------ -->
+                    <div class="text flex items-center gap-3">
+                        <!-- imgage----------------------- -->
+                        <img class="rounded-full h-14 w-14 object-cover" src="img/itachi.jpg" alt="khawas_rohan">
+                        <!-- Text------------------------- -->
+                        <div class="img-textALL">
+                            <p class="font-bold hover:underline">Itachi Uchiya <span class="font-normal text-gray-500">@sacrifiyer</span></p>
+                            <p>Its kinda cute though...</p>
+                        </div>
+                    </div>
+                    <!-- Picture for Post----------------------------------------------------------------- -->
+                    <div class="flex justify-center p-4">
+                        <img class="rounded-2xl object-cover" src="img/anime_meme1.jpg" alt="">
+                    </div>
+                    <!-- Like Share and Comment------------------------------------------------ -->
+                    <div class="flex space-x-2 items-center ml-3">
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">favorite</span>200kk
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">thumb_down</span>90k
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">comment</span>66k
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">repeat</span>4k
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">share</span>81k
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">bar_chart</span>1.15k
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-gray-200 border-b cursor-pointer mt-3 hover:bg-gray-100">
+                <div class="p-3 pt-0">
+                    <!-- Image Profile and Text------------------------ -->
+                    <div class="text flex items-center gap-3">
+                        <!-- imgage----------------------- -->
+                        <img class="rounded-full h-14 w-14 object-cover" src="img/xxxtentacion2.png" alt="khawas_rohan">
+                        <!-- Text------------------------- -->
+                        <div class="img-textALL">
+                            <p class="font-bold hover:underline">XXXTENTACION <span class="font-normal text-gray-500">@The_Legend</span></p>
+                            <p>i am alive but i am dead...</p>
+                        </div>
+                    </div>
+                    <!-- Picture for Post----------------------------------------------------------------- -->
+                    <div class="flex justify-center p-4">
+                        <img class="rounded-2xl object-cover" src="img/xxxtentacion1.png" alt="">
+                    </div>
+                    <!-- Like Share and Comment------------------------------------------------ -->
+                    <div class="flex space-x-2 items-center ml-3">
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">favorite</span>999k
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">thumb_down</span>30k
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">comment</span>12k
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">repeat</span>68k
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">share</span>6k
+                        <span class="material-symbols-outlined text-lg hover:bg-blue-200 rounded-full px-2 py-1">bar_chart</span>16.18k
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Third Section----------------------------------------------------------- -->
+
+        <div class="third w-[60%] ml-9 h-[100%] sticky top-0">
+            <!--Search-------------------------------------------------------------------  -->
+            <div class="search flex items-center border rounded-full p-[0.25rem]   bg-gray-200">
+                <span class="material-symbols-outlined text-2xl text-gray-500 ml-[0.8rem]">search</span>
+                <input class="  border-none bg-gray-200 w-full
+                focus: outline-none" type="search" placeholder="Search">
+            </div>
+            <!--Subscribe TO Premium-----------------------------------------------------  -->
+            <div class="subscribe border mt-5 p-3 rounded-xl border-gray-100">
+                <h1 class="font-bold text-[1.3rem]">Subscribe to Premium</h1>
+                <p class="mt-1 w-72">Subscribe to unlock new features and if eligible, receive a share of ads revenue.
+                </p>
+                <button
+                    class="border bg-black text-white font-bold py-[5.5px] mt-2 px-4 rounded-full hover:bg-gray-800">Subscribe</button>
+            </div>
+            <!--Trends For You------------------------------------------------------------  -->
+            <div class=" border mt-5  rounded-xl border-gray-100">
+                <h1 class="font-bold text-[1.3rem]  px-3 pt-2">Trends for you</h1>
+
+                <div class="flex items-start justify-between p-3
+                            hover:bg-gray-100 cursor-pointer   ">
+                    <div class="text">
+                        <p>Entertaiment . Trending</p>
+                        <p class="font-bold">#Kailki2898AD</p>
+                        <p>136k posts</p>
+                    </div>
+                    <div class=" ">
+                        <span class="material-symbols-outlined p-1 hover:bg-blue-200 rounded-full">more_horiz</span>
+                    </div>
+                </div>
+                <div class="flex items-start justify-between p-3
+                            hover:bg-gray-100 cursor-pointer   ">
+                    <div class="text">
+                        <p>Entertaiment . Trending</p>
+                        <p class="font-bold">#Kailki2898AD</p>
+                        <p>136k posts</p>
+                    </div>
+                    <div class=" ">
+                        <span class="material-symbols-outlined p-1 hover:bg-blue-200 rounded-full">more_horiz</span>
+                    </div>
+                </div>
+                <div class="flex items-start justify-between p-3
+                            hover:bg-gray-100 cursor-pointer   ">
+                    <div class="text">
+                        <p>Entertaiment . Trending</p>
+                        <p class="font-bold">#Kailki2898AD</p>
+                        <p>136k posts</p>
+                    </div>
+                    <div class=" ">
+                        <span class="material-symbols-outlined p-1 hover:bg-blue-200 rounded-full">more_horiz</span>
+                    </div>
+                </div>
+                <div class="flex items-start justify-between p-3
+                            hover:bg-gray-100 cursor-pointer   ">
+                    <div class="text">
+                        <p>Entertaiment . Trending</p>
+                        <p class="font-bold">#Kailki2898AD</p>
+                        <p>136k posts</p>
+                    </div>
+                    <div class=" ">
+                        <span class="material-symbols-outlined p-1 hover:bg-blue-200 rounded-full">more_horiz</span>
+                    </div>
+                </div>
+                <div class="flex items-start justify-between p-3
+                            hover:bg-gray-100 cursor-pointer   ">
+                    <div class="text">
+                        <p>Entertaiment . Trending</p>
+                        <p class="font-bold">#Kailki2898AD</p>
+                        <p>136k posts</p>
+                    </div>
+                    <div class=" ">
+                        <span class="material-symbols-outlined p-1 hover:bg-blue-200 rounded-full">more_horiz</span>
+                    </div>
+                </div>
+                <div class="flex items-start justify-between p-3
+                            hover:bg-gray-100 cursor-pointer   ">
+                    <div class="text">
+                        <p>Entertaiment . Trending</p>
+                        <p class="font-bold">#Kailki2898AD</p>
+                        <p>136k posts</p>
+                    </div>
+                    <div class=" ">
+                        <span class="material-symbols-outlined p-1 hover:bg-blue-200 rounded-full">more_horiz</span>
+                    </div>
+                </div>
+                <div class="flex items-start justify-between p-3
+                            hover:bg-gray-100 cursor-pointer   ">
+                    <div class="text">
+                        <p>Entertaiment . Trending</p>
+                        <p class="font-bold">#Kailki2898AD</p>
+                        <p>136k posts</p>
+                    </div>
+                    <div class=" ">
+                        <span class="material-symbols-outlined p-1 hover:bg-blue-200 rounded-full">more_horiz</span>
+                    </div>
+                </div>
+                <div class="flex items-start justify-between p-3
+                            hover:bg-gray-100 cursor-pointer   ">
+                    <div class="text">
+                        <p>Entertaiment . Trending</p>
+                        <p class="font-bold">#Kailki2898AD</p>
+                        <p>136k posts</p>
+                    </div>
+                    <div class=" ">
+                        <span class="material-symbols-outlined p-1 hover:bg-blue-200 rounded-full">more_horiz</span>
+                    </div>
+                </div>
+                <div class="p-3 hover:bg-gray-100 cursor-pointer ">
+                    <p class="text-blue-500">Show more</p>
+                </div>
+            </div>
+            <!-- Follow-------------------------------------------------------------------- -->
+            <div class=" border mt-5  rounded-xl border-gray-100">
+                <h1 class="font-bold text-[1.3rem]  px-3 pt-2">Who to follow</h1>
+
+                <div class="flex items-start justify-between p-3
+                hover:bg-gray-100 cursor-pointer   ">
+                    <div class="text flex items-center gap-3">
+                        <img class="rounded-full h-14 w-14 object-cover" src="img/king.jpg" alt="khawas_rohan">
+                        <div class="img-textALL">
+                            <p class="font-bold">KaiZen</p>
+                            <p>@Zen_Kai</p>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button
+                            class="border bg-black text-white font-bold py-[5.5px] mt-2 px-4 rounded-full hover:bg-gray-800">Follow</button>
+                    </div>
+                </div>
+
+                <div class="flex items-start justify-between p-3
+                            hover:bg-gray-100 cursor-pointer   ">
+                    <div class="text flex items-center gap-3">
+                        <img class="rounded-full h-14 w-14 object-cover" src="img/rohan.jpg" alt="khawas_rohan">
+                        <div class="img-textALL">
+                            <p class="font-bold">Rohan Khawas</p>
+                            <p>@khawas_rohan</p>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button
+                            class="border bg-black text-white font-bold py-[5.5px] mt-2 px-4 rounded-full hover:bg-gray-800">Follow</button>
+                    </div>
+                </div>
+
+                <div class="flex items-start justify-between p-3
+                            hover:bg-gray-100 cursor-pointer   ">
+                    <div class="text flex items-center gap-3">
+                        <img class="rounded-full h-14 w-14 object-cover" src="img/cover.jpg" alt="khawas_rohan">
+                        <div class="img-textALL">
+                            <p class="font-bold">Sasuke Uchiya</p>
+                            <p>@The_Last_Uchiya</p>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button
+                            class="border bg-black text-white font-bold py-[5.5px] mt-2 px-4 rounded-full hover:bg-gray-800">Follow</button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Term and Services -->
+            <div class=" text-[13px] p-5 flex gap-x-5 flex-wrap">
+                <a class="w-fit cursor-pointer hover:underline text-gray-600">Term of Service</a>
+                <a class="w-fit cursor-pointer hover:underline text-gray-600">Privacy Policy</a>
+                <a class="w-fit cursor-pointer hover:underline text-gray-600">Cookie Policy</a>
+                <a class="w-fit cursor-pointer hover:underline text-gray-600">Accessibility</a>
+                <a class="w-fit cursor-pointer hover:underline text-gray-600">Ads info</a>
+                <a class="w-fit cursor-pointer hover:underline text-gray-600">More ...</a>
+                <a class="w-fit cursor-pointer hover:underline text-gray-600">@2024 X Corp.</a>
+            </div>
+        </div>
+
+
+</body>
+
+</html>
