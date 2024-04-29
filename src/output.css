@@ -640,6 +640,10 @@ video {
   margin-right: 2.5rem;
 }
 
+.ml-0 {
+  margin-left: 0px;
+}
+
 .block {
   display: block;
 }
@@ -759,6 +763,14 @@ video {
 
 .w-\[18vw\] {
   width: 18vw;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .cursor-pointer {
@@ -1158,6 +1170,10 @@ video {
     margin-right: 2rem;
   }
 
+  .md\:ml-3 {
+    margin-left: 0.75rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1184,6 +1200,16 @@ video {
 
   .md\:w-0 {
     width: 0px;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:bg-blue-500 {
