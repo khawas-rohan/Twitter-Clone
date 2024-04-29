@@ -15,7 +15,7 @@ logo.addEventListener("click", () => {
 });
 
 setting.addEventListener("click", () => {
-    first.style.position = "relative";
+    first.style.position = "sticky";
     first.style.left = "0";
     second.style.width = "80%";
     second.style.transition = "all 0.5s ease"; // Ensure the transition is applied here
