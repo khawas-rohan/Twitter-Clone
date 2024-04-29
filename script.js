@@ -56,9 +56,7 @@ function handleHoverEffect() {
   hoverElements.forEach((hoverElement) => {
     hoverElement.addEventListener("mouseenter", () => {
       hoverElement.style.backgroundColor =
-        document.body.style.backgroundColor === "black"
-          ? "#1c1b1b"
-          : "lightgray";
+        document.body.style.backgroundColor === "black" ? "#1c1b1b" : "lightgray";
     });
 
     hoverElement.addEventListener("mouseleave", () => {
