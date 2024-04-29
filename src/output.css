@@ -717,6 +717,14 @@ video {
   width: 100%;
 }
 
+.w-\[0\%\] {
+  width: 0%;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1103,6 +1111,14 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:visible {
+    visibility: visible;
+  }
+
+  .md\:sticky {
+    position: sticky;
+  }
+
   .md\:ml-0 {
     margin-left: 0px;
   }
