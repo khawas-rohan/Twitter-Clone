@@ -17,7 +17,9 @@
 
         <!-- First Section---------------------------------------------------------- -->
 
-        <div class="first bg-white mr-8 border-r-1 h-[100%] sticky top-0 hidden ">
+        <div class="first bg-white  border-r-1 h-[100%] sticky top-0 mr-2 
+        w-16 md:w-auto md:mr-8">
+        <!-- <div class="first bg-white mr-8 border-r-1 absolute left-[-100%]   "> -->
             <!-- Logo--------------------------------------------------------------- -->
             <div class="ml-2 px-2 py-2 w-fit hover:bg-gray-200 cursor-pointer rounded-full ">
                 <svg viewBox="0 0 24 24" aria-hidden="true"
@@ -32,58 +34,60 @@
             </div>
             <!-- Icon---------------------------------------------------------------- -->
             <div class="sidebar flex">
-                <ul class="flex flex-col  text-xl font-semibold w-1/2">
+                <ul class="flex flex-col  text-xl font-semibold w-1/2 ">
                     <li
                         class="flex justify-start w-fit items-center px-4 py-2  hover:bg-gray-200 cursor-pointer rounded-full   ">
-                        <span class="material-symbols-outlined text-3xl">home</span>Home
+                        <span class="material-symbols-outlined text-3xl">home</span><span class="hidden md:block"> Home</span>
                     </li>
                     <li
                         class="flex justify-start w-fit items-center px-4 py-2  hover:bg-gray-200 cursor-pointer rounded-full ">
-                        <span class="material-symbols-outlined text-3xl">search</span>Explore
+                        <span class="material-symbols-outlined text-3xl">search</span><span class="hidden md:block"> Explore</span>
                     </li>
                     <li
                         class="flex justify-start w-fit items-center px-4 py-2  hover:bg-gray-200 cursor-pointer rounded-full ">
-                        <span class="material-symbols-outlined text-3xl">notifications</span>Notifications
+                        <span class="material-symbols-outlined text-3xl">notifications</span><span class="hidden md:block"> Notifications</span>
                     </li>
                     <li
                         class="flex justify-start w-fit items-center px-4 py-2  hover:bg-gray-200 cursor-pointer rounded-full ">
-                        <span class="material-symbols-outlined text-3xl">message</span>Messages
+                        <span class="material-symbols-outlined text-3xl">message</span><span class="hidden md:block"> Messages</span>
                     </li>
                     <li
                         class="flex justify-start w-fit items-center px-4 py-2  hover:bg-gray-200 cursor-pointer rounded-full ">
-                        <span class="material-symbols-outlined text-3xl">lists</span>Lists
+                        <span class="material-symbols-outlined text-3xl">lists</span> <span class="hidden md:block">Lists</span>
                     </li>
                     <li
                         class="flex justify-start w-fit items-center px-4 py-2  hover:bg-gray-200 cursor-pointer rounded-full ">
-                        <span class="material-symbols-outlined text-3xl">workspace_premium</span>Premium
+                        <span class="material-symbols-outlined text-3xl">workspace_premium</span><span class="hidden md:block"> Premium</span>
                     </li>
                     <li
                         class="flex justify-start w-fit items-center px-4 py-2  hover:bg-gray-200 cursor-pointer rounded-full ">
-                        <span class="material-symbols-outlined text-3xl">person</span>Profile
+                        <span class="material-symbols-outlined text-3xl">person</span> <span class="hidden md:block">Profile</span>
                     </li>
                     <li
                         class="flex justify-start w-fit items-center px-4 py-2  hover:bg-gray-200 cursor-pointer rounded-full ">
-                        <span class="material-symbols-outlined text-3xl">more</span>More
+                        <span class="material-symbols-outlined text-3xl">more</span> <span class="hidden md:block">More</span>
                     </li>
                 </ul>
             </div>
             <!-- Button----------------------------------------------------------------- -->
             <div
-                class="btn h-14 w-60 border rounded-full flex justify-center bg-blue-500 text-white font-bold text-xl mt-2 hover:bg-blue-600 cursor-pointer">
-                <button>Post</button>
+                class="btn h-12 w-auto border rounded-full flex justify-center items-center bg-blue-500 text-white font-bold text-xl mt-2 ml-2
+                 hover:bg-blue-600 cursor-pointer md:ml-0">
+                <button class="hidden md:block">Post</button>
+                <span class="material-symbols-outlined  md:hidden">edit</span>
             </div>
             <!-- Khawas_rohan------------------------------------------------------------ -->
-            <div class="flex items-center justify-between  mt-5 rounded-full
+            <div class="flex items-center justify-between  mt-5 rounded-full w-[18vw] ml-2 md:ml-0
                             hover:bg-gray-100 cursor-pointer   ">
                 <div class="text flex items-center gap-3">
                     <img class="rounded-full h-14 w-14 object-cover" src="img/rohan.jpg" alt="khawas_rohan">
                     <div class="img-textALL">
-                        <p class="font-bold text-sm">ROHAN KHAWAS</p>
-                        <p class="text-xs">@khawas_rohan</p>
+                        <p class="font-bold text-sm hidden md:block">ROHAN KHAWAS</p>
+                        <p class="text-xs hidden md:block">@khawas_rohan</p>
                     </div>
                 </div>
                 <div>
-                    <span class="material-symbols-outlined p-1 hover:bg-blue-200 rounded-full">more_horiz</span>
+                    <span class="material-symbols-outlined p-1 hover:bg-blue-200 rounded-full hidden md:block">more_horiz</span>
                 </div>
             </div>
         </div>
@@ -106,7 +110,7 @@
                 <!-- profile and whats happening---------------- -->
                 <div class="flex flex-col mb-2">
                     <div class="post flex space-x-3">
-                        <img class="rounded-full h-14 w-16 object-cover" src="img/rohan.jpg" alt="khawas_rohan">
+                        <img class="rohan rounded-full h-14 w-16 object-cover" src="img/rohan.jpg" alt="khawas_rohan">
                         <input class="w-full border-none focus:outline-none text-xl" type="text"
                             placeholder="What is happening?!">
                     </div>
@@ -256,7 +260,7 @@
         </div>
         <!-- Third Section----------------------------------------------------------- -->
 
-        <div class="third w-[60%] ml-9 h-[100%] sticky top-0 hidden">
+        <div class="third w-[60%] ml-9 h-[100%] sticky top-0 hidden sm:block">
             <!--Search-------------------------------------------------------------------  -->
             <div class="search flex items-center border rounded-full p-[0.25rem]   bg-gray-200">
                 <span class="material-symbols-outlined text-2xl text-gray-500 ml-[0.8rem]">search</span>
@@ -431,5 +435,6 @@
 
 
 </body>
+<!-- <script src="script.js"></script> -->
 
 </html>
