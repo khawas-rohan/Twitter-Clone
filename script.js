@@ -19,6 +19,6 @@ setting.addEventListener("click", () => {
     first.style.left = "0px";
     first.style.transition = "all 1s ease";
 
-    second.style.marginLeft = "5rem";
+    second.style.marginLeft = "4.5rem";
     second.style.transition = "all 0.5s ease";
 });
